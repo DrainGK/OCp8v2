@@ -13,6 +13,9 @@
         <!--==================== CSS ==========-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
+        <!--==================== EMAIL JS ====================-->
+        <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+
         <title>Responsive Portfolio Website</title>
     </head>
     <body>
@@ -495,7 +498,7 @@
                                 <h3 class="portfolio__title">Kasa React</h3>
                                 <p class="portfolio__description">Website adaptable to all devices, with ui components 
                                     and animated interactions. Done with React for my degree</p>
-                                <a href="#" class="button button--flex button--small portfolio__button">
+                                <a href="https://kasa-lopez.netlify.app/" class="button button--flex button--small portfolio__button">
                                     Demo
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
@@ -510,8 +513,8 @@
                                 <h3 class="portfolio__title">Architect Portfolio</h3>
                                 <p class="portfolio__description">Website adaptable to all devices, with ui components 
                                     and animated interactions.Done in Vanilla Javascript for my degree</p>
-                                <a href="#" class="button button--flex button--small portfolio__button">
-                                    Demo
+                                <a href="https://github.com/DrainGK/OCp3" class="button button--flex button--small portfolio__button">
+                                    github
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
                             </div>
@@ -525,7 +528,7 @@
                                 <h3 class="portfolio__title">Movie App React</h3>
                                 <p class="portfolio__description">Website adaptable to all devices, with ui components 
                                     and animated interactions. Done in React for learning how to use API</p>
-                                <a href="#" class="button button--flex button--small portfolio__button">
+                                <a href="react-movie-lopez.netlify.app" class="button button--flex button--small portfolio__button">
                                     Demo
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
@@ -626,36 +629,30 @@
                             <i class="uil uil-map-marker contact__icon"></i>
                             <div>
                                 <h3 class="contact__title">Location</h3>
-                                <span class="contact__subtitle">Tokyo - Japan #123</span>
+                                <span class="contact__subtitle">Tokyo - Japan</span>
                             </div>
                         </div>
                     </div>
 
-                    <form action="" class="contact__form grid">
+                    <form action="" id="contact-form" class="contact__form grid">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
-                                <label for="" class="contact__label">Name</label>
-                                <input type="text" class="contact__input">
+                                <label for="name" class="contact__label">Name</label>
+                                <input id="name" type="text" class="contact__input">
                             </div>
                             <div class="contact__content">
-                                <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input">
+                                <label for="email" class="contact__label">Email</label>
+                                <input id="email" type="email" class="contact__input">
                             </div>
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Project</label>
-                            <input type="text" class="contact__input">
-                        </div>
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Message</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                            <label for="message" class="contact__label">Message</label>
+                            <textarea id="message" name="" id="" cols="0" rows="7" class="contact__input"></textarea>
                         </div>
                         
                         <div>
-                            <a href="#" class="button button--flex">
-                                Send Message
-                                <i class="uil uil-message button__icon"></i>
-                            </a>
+                            <button type="submit" class="button button--flex">Send Message
+                                <i class="uil uil-message button__icon"></i></button>
                         </div>
                     </form>
                 </div>
@@ -697,5 +694,6 @@
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
+
     </body>
 </html>
